@@ -2,13 +2,20 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PLANEE</title>
+
     <style>
 html {
   scroll-behavior: smooth;
 }
+
 body {margin:0;}
+
 body {
-  font-family: Helvetica;
+  font-family: Roboto;
 }
 .box {
   float: left;
@@ -20,20 +27,34 @@ body {
   box-sizing: border-box;
 }
 
+.botao{
+
+  border: none;  
+  padding: 10px 100px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  position:absolute;
+  left:0%;
+  background-color: rgb(255, 186, 117);
+
+  
+}
+.retangulo {
+  height: 10;
+  width: 563px;
+  background-color: #FFFFFF;
+}
+
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-
-
-@media screen and (max-width: 600px) {
-  .texto.lado, .texto.meio {
-    width: 100%;
-  }
-}
-
 
 .column {
   float: left;
@@ -55,6 +76,7 @@ ul {
   top: 0;
   width: 100%;
 }
+
 li a {
 float : right;
   display: block;
@@ -82,6 +104,24 @@ li a:hover:not(.active) {
   background-color: rgba(43, 127, 252, 0.5);
 }
 
+.cartoes{
+
+  display: flex;
+  
+}
+.card{
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
 footer {
   background-color: rgba(43, 127, 252, 0.5);
   padding: 10px;
@@ -90,27 +130,44 @@ footer {
 }
 
 
+
     </style>
 </head>
 <body>
 <ul>
     <li1><a class="active" style="font-size:40px;text-align: center" href="#home">PLANNE</a></li1>
-    <li><a style="font-size:20px;text-align: center" href="#section3">DOWNLOAD</a></li>
-    <li><a style="font-size:20px;text-align: center" href="#section2">FUNCIONALIDADES</a></li>
-    <li><a style="font-size:20px;text-align: center" href="#section1">SOBRE A APP</a></li>
+    <li><a style="font-size:20px;text-align: center" href="#sobrenos">SOBRE NÓS</a></li>
+    <li><a style="font-size:20px;text-align: center" href="#funcionalidades">FUNCIONALIDADES</a></li>
+    <li><a style="font-size:20px;text-align: center" href="#sobreaapp">SOBRE A APP</a></li>
 </ul>
 <br>
 <br>
 <br>
 <br>
-<img src="https://media.discordapp.net/attachments/363420355856957452/1043647899592032267/backgroud.png?width=883&height=450"
-     style="width:100%">
-<div id="section1" style="padding: 65px">
+<header>
+    <img id="home"
+         src="https://media.discordapp.net/attachments/363420355856957452/1043647899592032267/backgroud.png?width=883&height=450"
+         style="width:100%">
+    <div style="position:absolute; top:50%; left:5%;">
+        <div style="text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 2px #000; color: orange;">
+            <h1>Planeia o teu dia com o...</h1>
+            <h1 style="font-size:82px!important"><b>PLANIE</b></h1>
+        </div>
+        <div>
+            <h6>
+                <button class="botao"><a style="color: black; font-size: 13px"><b><u>FAZ DOWNLOAD AGORA</u></b></a>
+                </button>
+            </h6>
+        </div>
+    </div>
+
+</header>
+<div id="sobreaapp" style="padding: 65px">
     <p style="font-size:30px; text-align:center ">O QUE É O PLANNE</p>
     <p style="font-size:30px; text-align:center;color: rgba(128,128,128) ">O Planie permite ao utilizador criar um plano
         semanal, onde inclui horas de trabalho, estudo, refeições e sono.</p>
     <br>
-    <p style="font-size:25px"  align="justify">O Planie é uma aplicação de Android e iOS com o intuito de ajudar
+    <p style="font-size:25px" align="justify">O Planie é uma aplicação de Android e iOS com o intuito de ajudar
         jovens
         estudantes a organizar as suas atividades semanais, assim como o seu estudo. Para tal, ao descarregar a
         aplicação, o utilizador fica encarregue de tomar conta de uma criatura virtual, o Planie, que vai crescendo
@@ -122,7 +179,7 @@ footer {
 
 <hr>
 
-<div id="section2">
+<div id="funcionalidades">
     <p style="font-size:30px; text-align:center">COMO FUNCIONA</p>
 </div>
 
@@ -138,7 +195,8 @@ footer {
     <img src="https://cdn.discordapp.com/attachments/363420355856957452/1043235564633194506/happiness.png"
          style="width:100%">
     <p style="font-size:30px; text-align:center">Felicidade</p>
-    <p style="font-size:15px; text-align:center" align="justified">As atividades extra trabalho são essenciais, a organização entre
+    <p style="font-size:15px; text-align:center" align="justified">As atividades extra trabalho são essenciais, a
+        organização entre
         desporto e saídas com os teus amigos aumentarão a felicidade do Planie.</p>
 </div>
 
@@ -154,35 +212,58 @@ footer {
 <figure>
     <img src="https://cdn.discordapp.com/attachments/821703750157991957/1044670328913264710/unknown.png" class="center">
     <br>
-    <figcaption style="font-size:15px; text-align:center;color: rgba(128,128,128)">Photo by the Public Health Image Library from the Centers for Disease Control and Prevention</figcaption>
+    <figcaption style="font-size:15px; text-align:center;color: rgba(128,128,128)">Photo by the Public Health Image
+        Library from the Centers for Disease Control and Prevention
+    </figcaption>
 </figure>
 <br>
 <br>
-<br>
-<p style="font-size:25px; text-align:left; padding: 40px" align="justify">Embora reconheçam a importância do estudo, muitos alunos não sabem de que forma o fazer. Isto leva a uma atitude pouco ativa e a procrastinação desde criança. Através do Planie, a nossa equipa tem como objetivo ajudar os mais novos a começarem a ter posturas de trabalho, planeando o seu tempo a aprenderem as vantagens de organizar o seu estudo.</p>
+<p style="font-size:25px; text-align:left; padding: 40px" align="justify">Embora reconheçam a importância do estudo,
+    muitos alunos não sabem de que forma o fazer. Isto leva a uma atitude pouco ativa e a procrastinação desde criança.
+    Através do Planie, a nossa equipa tem como objetivo ajudar os mais novos a começarem a ter posturas de trabalho,
+    planeando o seu tempo a aprenderem as vantagens de organizar o seu estudo.</p>
+
+<div id="sobrenos" class="cartoes">
+
+    <div class="card">
+        <img src="" alt="vicente">
+        <h1>vicente</h1>
+        <p class="title">sprint master 1</p>
+        <p>ISEP</p>
+
+    </div>
+
+    <div class="card">
+        <img src="" alt="david">
+        <h1>david</h1>
+        <p class="title">sprint master 2</p>
+        <p>ISEP</p>
+
+    </div>
+
+    <div class="card">
+        <img src="" alt="tiago">
+        <h1>tiago</h1>
+        <p class="title">sprint master 3</p>
+        <p>ISEP</p>
+
+    </div>
+
+    <div class="card">
+        <img src="" alt="vasco">
+        <h1>vasco</h1>
+        <p class="title">sprint master 4</p>
+        <p>ISEP</p>
+
+    </div>
+
+</div>
+
+
+</div>
 
 <hr>
 
-<div id="section3">
-    <p style="font-size:30px;text-align:center">DOWNLOAD</p>
-    <p style="font-size:20px; text-align:center">SELECIONA A OPÇÃO QUE SE ADEQUA AO TEU DISPOSITIVO</p>
-</div>
-
-<div class="row">
-    <div class="column"> <!-- PLay Store -->
-        <a href=""><img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdGtZmcUsw-w7Rt44T_9Jd3btezwezsP8Tdw&usqp=CAU"
-                align="right"
-                style="width:35%;height:35%"></a>
-    </div>
-
-    <div class="column"> <!-- App Store -->
-        <a href=""><img
-                src="https://www.pngkey.com/png/full/223-2230507_instant-updates-in-one-intelligent-feed-app-store.png"
-                align="left"
-                style="width:40%;height:40%"></a>
-    </div>
-</div>
 
 <footer>
     <p style="font-size:15px;text-align:center">APOIO AO CLIENTE</p>
