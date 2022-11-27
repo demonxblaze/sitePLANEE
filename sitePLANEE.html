@@ -124,8 +124,28 @@ li a:hover:not(.active) {
 
 footer {
   background-color: rgba(43, 127, 252, 0.5);
-  padding: 10px;
   text-align: center;
+  color: white;
+}
+.redes {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  }
+.button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid rgba(43, 127, 252, 0.5);
+}
+.button:hover {
+  background-color: rgba(43, 127, 252, 0.5);
   color: white;
 }
 
@@ -265,11 +285,39 @@ footer {
 </div>
 
 <hr>
+<p style="font-size:30px; text-align:center">CONTACTO</p>
+<p style="font-size:30px; text-align:center;color: rgba(128,128,128) ">Qualquer contacto irá ser respondido pelos administradores</p>
+<p style="font-size:25px; text-align:left; padding: 60px" align="justify">Criado para o projeto de LAPR queremos manter o maior contacto possivel com os nossos utilizadores. A resposta pode demorar no entanto será respondido por qualquer Scrum Master.</p>
 
+<label for="birthday">Data da Submição:</label><br>
+<input type="date" id="data" name="data" size=100%>
+<br>
+<br>
+<label for="Nome"></label>
+<input type="tel" id="nome" name="nome" size=100% placeholder="Nome">
+<br>
+<br>
+<label for="Assunto"></label>
+<input type="tel" id="Assunto" name="Assunto" size=100% placeholder="Assunto"><br>
+<br>
+<label for="phone"></label>
+<input type="tel" id="Mensagem" name="Mensagem" size=100% placeholder="Mensagem"><br>
+<br>
+<input type="submit" value="Enviar">
 
 <footer>
-    <p style="font-size:15px;text-align:center">APOIO AO CLIENTE</p>
-    <p style="text-align:center">Numero de telefone, e-mail, redes sociais</p>
+<br>
+    <p style="font-size:30px;text-align:center">Redes Sociais</p>
+    <div class="box">
+    <button class="redes button">Instagram</button>
+    </div>
+    <div class="box">
+    <button class="redes button">Twiter</button>
+    </div>
+    <div class="box">
+    <button class="redes button">Facebook</button>
+    </div>
+<p style="color: rgba(43, 127, 252, 0.5);">PLANNE</p>
 </footer>
 
 </body>
