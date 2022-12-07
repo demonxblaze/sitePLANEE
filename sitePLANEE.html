@@ -17,9 +17,16 @@ body {margin:0;}
 body {
   font-family: Roboto;
 }
+
+.boxcenter {
+
+
+
+}
+
 .box {
   float: left;
-  width: 32.33%;
+  width: 33.33%;
   padding: 5px;
   padding-bottom: 90px;
 }
@@ -139,6 +146,16 @@ li2 a:hover:not(.active) {
     padding-right: 5%;
 }
 
+.titulos{
+    font-size:40px; 
+    font-family: sans-serif, arial-black; 
+    text-align:center; 
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    color: rgb(84, 180, 232);
+    font-weight: bold;
+
+}
+
 input{
     font-size: 17px;
     display:block;
@@ -210,7 +227,7 @@ footer {
 </header>
 
 <div id="sobreaapp" style="padding: 65px">
-    <p style="font-size:40px; text-align:center ">O QUE É O PLANIE</p>
+    <p class="titulos">O QUE É O PLANIE</p>
 
     <img src="https://cdn.discordapp.com/attachments/363420355856957452/1046524460053835826/planeehi.png" class="center"
     style="width:25%">
@@ -232,7 +249,7 @@ footer {
 <br>
 
 <div id="funcionalidades">
-    <p style="font-size:40px; text-align:center">COMO FUNCIONA</p>
+    <p class="titulos">COMO FUNCIONA</p>
 </div>
 
 <div>
@@ -240,12 +257,12 @@ footer {
     <p class="info" >Conforme os estado de saúde do Planie será calculada uma pontução, que será comparada com outros utilizadores num leaderboard, motivando os utilizadores a seguirem o plano semanal atual.</p>
 </div>
 
-<img src="https://cdn.discordapp.com/attachments/363420355856957452/1046101620041207879/planiestatssmaller.png" class="center"
-    style="width:25%">
-
-<div class="box">
+<img src="https://cdn.discordapp.com/attachments/764156876820054080/1050022831376846908/imgemplanie.png" class="center"
+    style="width:65%">
+<div style="display: flex">
+<div class="box" style="padding-left: 25px;">
     <p style="font-size:30px; text-align:center; color: blue" >Energia</p>
-    <p style="font-size:23px; text-align:center">Quanto mais organização na sua vida e gestão de sono a energia do
+    <p style="font-size:23px; text-align:center" align="justified">O Planie tambem precisa de energia. Quanto mais organização na sua vida e gestão de sono a energia do
         Planie aumentará.</p>
 </div>
 
@@ -256,17 +273,15 @@ footer {
         desporto e saídas com os teus amigos aumentarão a felicidade do Planie.</p>
 </div>
 
-<div class="box">
+<div class="box" style="padding-right: 25px;">
     <p style="font-size:30px; text-align:center; color: red">Inteligência</p>
-    <p style="font-size:23px; text-align:center">Ganhar conhecimentos é importante tanto para ti como para o Planie.
+    <p style="font-size:23px; text-align:center" align="justified">Ganhar conhecimentos é importante tanto para ti como para o Planie.
         Quanto mais organizares os teus estudos mais inteligência o Planie irá ganhar.</p>
 </div>
-
-
-
+</div>
 <br>
 
-<p style="font-size:40px; text-align:center">OBJETIVOS DO PROJETO</p>
+<p class="titulos">OBJETIVOS DO PROJETO</p>
 <br>
 <figure>
     <img src="https://cdn.discordapp.com/attachments/821703750157991957/1044670328913264710/unknown.png" class="center">
@@ -290,12 +305,11 @@ footer {
     </p>
 </div>
 <div id="sobrenos"> 
-  <p style="font-size:40px; text-align:center ">SOBRE NÓS</p>
-  <p style="color: white;"> ___________________ </p>
+  <p class="titulos">SOBRE NÓS</p>
   <br>
 </div>
 
-<div class="cartoes">
+<div class="cartoes" style="display: flex;">
 
     <div class="card">
         <img src="https://cdn.discordapp.com/attachments/363420355856957452/1046094013440200774/image.png" alt="vicente">
@@ -335,13 +349,12 @@ footer {
 <br>
 <br>
 <hr>
-<p style="font-size:40px; text-align:center">CONTACTOS</p>
+<p class="titulos">CONTACTOS</p>
 <p style="font-size:20px; text-align:center;color: rgba(128,128,128) ">Qualquer contacto irá ser respondido pelos administradores</p>
 <p style="font-size:25px; text-align:left; padding: 60px" align="justify">Criado para o projeto de LAPR queremos manter o maior contacto possivel com os nossos utilizadores. A resposta pode demorar no entanto será respondido por qualquer Scrum Master.</p>
 
 <div>
-   
-        <form style="padding-left: 10%">
+<form style="padding-left: 10%">
 <label for="birthday">Data da Submição:</label><br>
 <br>
 <input type="date" id="data" name="data">
@@ -359,9 +372,9 @@ footer {
 
 </div>
 </form>
-<footer>
 <br>
-    <p style="font-size:30px;text-align:center">Redes Sociais</p>
+    <p class="titulos">Redes Sociais</p>
+    <div style="display: flex; padding-left: 16.6666666%;">
     <div class="box">
     <button class="redes button"><img src="https://assets.stickpng.com/images/60ed833f035dbe00046c24b6.png" width="70" height="70" ></button>
     </div>
@@ -371,8 +384,6 @@ footer {
     <div class="box">
     <button class="redes button"><img src="https://www.profitabletradie.com/wp-content/uploads/2022/02/Facebook-Logo-Square-768x768-1.png" width="70" height="70" ></button>
     </div>
-<p style="color: rgba(43, 127, 252, 0.5);">PLANIE</p>
-</footer>
-
+</div>
 </body>
 </html>
